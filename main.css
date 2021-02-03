@@ -1,0 +1,419 @@
+* {
+    font-size: 16px;
+    vertical-align: middle;
+}
+body {
+    background: #DADADA;
+    overflow-x: hidden;
+    min-width: 320px;
+    height: 100%;
+
+}
+
+.container{
+    width: 90%;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    padding-top: 100px;
+    display: block;
+    font-size: 100%;
+    
+}
+.grid{
+    display: flex;
+    width: 100%;
+    box-shadow: none;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    background: white;
+    padding: 1em;
+    top: 0;
+    bottom: 0;
+    border-radius: 0;
+    margin: 0;
+    width: auto;
+    box-shadow: none;
+    border-radius: .28571429rem;
+    border: 1px solid rgba(34,36,38,.15);
+}
+.column{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+    position: relative;
+    display: inline-block;
+    width: 6.25%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    vertical-align: top;
+}
+.eleven-wide{
+    box-sizing: border-box;
+    padding:14px;
+    width: 68.75%;
+    position: relative;
+    display: inline-block;
+}
+@media (max-width: 800px) {
+    .eleven-wide {
+        width: 100%;
+        max-width: 100%;
+        min-width: 500px;
+    }
+}
+.five-wide{
+    box-sizing: border-box;
+    width: 31.25%;
+    padding: 14px;
+    float: right;
+    position: relative;
+    display:inline-block;
+}
+@media (max-width: 800px) {
+    .five-wide {
+        width: 100%;
+        max-width: 100%;
+        min-width: 500px;
+    }
+}
+.product-name, .product-count, .product-buy-button{
+    box-sizing: border-box;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+    position: relative;
+    display: inline-block;
+    width: 6.25%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    vertical-align: top;
+}
+.product-name{
+    width: 25%!important;
+    padding: 14px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.change-input{
+        box-sizing: border-box;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    display: inline-block;
+    width: 25%;
+    height: 50px;
+    border-width: 1px;
+    text-indent: 5px;
+    border-color: lightgray;
+}
+.product-count{
+    width: 37.5%!important;
+    padding: 7px 14px 7px 14px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center; 
+}
+.product-buy-button{
+    width: 37.5%!important;
+    padding: 7px 0px 7px 14px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right; 
+}
+.segment{
+    top: 0;
+    bottom: 0;
+    border-radius: 0;
+    margin: 0;
+    width: auto;
+    box-shadow: none;
+    position: relative;
+    background: white;
+    padding: 1em;
+    border-radius: .28571429rem;
+    border: 1px solid rgba(34,36,38,.15);
+}
+.segment-left{
+    top: 0;
+    bottom: 0;
+    border-radius: 0;
+    margin: 0;
+    width: auto;
+    box-shadow: none;
+    position: relative;
+    background: white;
+    padding: 1em;
+    border-radius: .28571429rem;
+    border: 1px solid rgba(34,36,38,.15);
+}
+.state-not-bought .notbuy-button{
+    display: none;
+}
+.state-bought .buy-button, .state-bought .delete-button, .state-bought .minus-button, .state-bought .plus-button{
+    display: none;
+}
+
+.state-bought .product-name {
+ text-decoration: line-through;
+}
+.id {
+    display: none;
+}
+
+. {
+
+}
+.input{
+    display: flex;
+    position: relative;
+    background: white;
+    padding: 1em;
+    border-radius: 0;
+    margin: 0;
+    width: auto;
+    box-shadow: none;
+    position: relative;
+    background: white;
+    padding: 1em;
+    border-radius: .28571429rem;
+    border: 1px solid rgba(34,36,38,.15);
+    
+}
+
+
+.add-button{
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+    display: inline;
+    align-items: center;
+    flex: 0 0 auto;
+    width: 30%;
+    min-width: 100px;
+    height: 50px;
+    color: white;
+    background-color:dodgerblue ;
+    border: 0;
+    float: right;
+    box-shadow: 0 -0.3em 0 0 rgba(34,36,38,.15) inset;
+}
+.minus-button{
+    outline: none;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: red;
+    border: 0;
+    box-shadow: 0 -0.3em 0 0 rgba(34,36,38,.15) inset;
+}
+.minus-button:active {
+    background: #c12020;;
+}
+.count-label{
+    border-radius: 5px;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: #cdcbcb;
+    color: #393939;
+}
+.plus-button{
+        outline: none;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: forestgreen;
+    border: 0;
+    box-shadow: 0 -0.3em 0 0 rgba(34,36,38,.15) inset;
+}
+.buy-button {
+    outline: none;
+    border-radius: 5px;
+    display: inline-block;
+    height: 40px;
+    border: 0;
+    background: #d3d3d3;
+    color: #393939;
+    box-shadow: 0 -0.3em 0 0 rgba(34,36,38,.15) inset;
+}
+.notbuy-button {
+    outline: none;
+    border-radius: 5px;
+    display: inline-block;
+    height: 40px;
+    border: 0;
+    background: #d3d3d3;
+    color: #393939;
+    box-shadow: 0 -0.3em 0 0 rgba(34,36,38,.15) inset;
+}
+.delete-button {
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+    width: 40px;
+    background: red;
+    border: 0;
+    box-shadow: 0 -0.3em 0 0 rgba(34,36,38,.15) inset;
+}
+.input-form{
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    display: inline-block;
+    width: 70%;
+    height: 50px;
+    border-width: 1px;
+    text-indent: 5px;
+    border-color: lightgray;
+}
+.title-left{
+    font-size: 125%;
+    font-weight: bold; 
+}
+.products-left{
+    display: block;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px 0px;
+    border-color: lightgrey;
+}
+.counter-left{
+       text-align: center;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
+    background: #d3d3d3;
+    display: inline-block;
+}
+.product-left-name{
+    display: inline-block;
+}
+.product-counter{
+    display: inline-block;
+    min-width: 18px;
+    height: 18px;
+    color: white;
+    border-radius: 50%;
+    background: orange;
+    padding: 3px;
+}
+.done{
+    height:40%;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    border-top-color: #cdcbcb;
+    box-sizing: border-box;
+    min-height: 30px;
+}
+.done .counter-left .product-left-name{
+    text-decoration: line-through;
+}
+
+.state-change-name .product-name{
+    display: none;
+}
+
+.state-not-change-name .change-input{
+    display: none;
+}
+[data-tooltip] {
+position: relative;
+}
+[data-tooltip]::before {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    font-size: 0;
+    background: blueviolet;
+    color: white;
+    visibility: hidden;
+    content: attr(data-tooltip);
+    border-radius: 10px;
+
+    transition: 0.5s;
+}
+
+[data-tooltip]:hover::before {
+    width: 120px;
+    height: 14px;
+    opacity: 2;
+    visibility: visible;
+    font-size: 65%;
+}
+
+.badge {
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+    position: fixed;
+    bottom: 0;
+    background-color: darkviolet;
+    color: white;
+    line-height: 2px;
+    height: 6px;
+    text-align: justify;
+    transition: all 0.5s ease;
+
+}
+
+.badge:hover {
+    background-color: darkblue;
+    height: 35px;
+}
+
+.badge:hover .hidden {
+    visibility: visible;
+}
+
+.hidden {
+    font-weight: normal;
+    visibility: hidden;
+}
+@media print {
+
+    .eleven-wide {
+        width: 65%;
+        min-width: 0%;
+    }
+
+    .five-wide{
+        width: 35%;
+        min-width: 0%;
+    }
+
+    .badge {
+        padding: 0px 10px 10px;
+        background: white;
+        border: 5px solid darkviolet;
+        color: white;
+        height: 40px;
+        line-height: 0;
+    }
+    .nonHidden{
+        display: none;
+    }
+
+    .hidden {
+        font-size: medium;
+        color: black;
+        visibility: visible;
+    }
+
+}
+
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="uk">
+    <meta charset="UTF-8">
+    <title>BuyList Nazar Mahdych</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+    <body>
+        <div class = "container">
+                <div class = "eleven-wide">
+                            <div class = "input">
+                                <input class = "input-form" type="text" placeholder="Назва товару">
+                                <button class="button add-button" data-tooltip = "Додати новий товар">Додати</button>
+                            </div>
+                        <div class = "template" style = "display: none">
+                            <div class = "grid">
+                                <div class = "column product-name">Помідори
+                                </div>
+                                <input class="change-input" type="text">
+                                <div class = "column product-count">
+                                    <button class = "button minus-button" data-tooltip = "Зменшити кількість">-</button>
+                                    <span class= "count-label">1</span>
+                                    <button class = "button plus-button" data-tooltip = "Збільшити кількість">+</button>
+                                </div>
+                                <div class = "column product-buy-button">
+                                    <button class = "buy-button" data-tooltip = "Додати в куплене">Куплено</button>
+                                    <button class = "delete-button" data-tooltip = "Видалити товар">X</button>
+                                    <button class="notbuy-button">Не куплено</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>   
+                
+                <div class = "five-wide">
+                        <div class = "segment title-left">Залишилося</div>
+                        <div class = "segment-left">
+                            <div class = "right-template" style = "display: none">
+                                <div class = "counter-left">
+                                    <div class = "product-left-name">Помідори</div>
+                                    <div class = "product-counter">1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "segment title-left"> Куплено</div>
+                        <div class = "segment">
+                            <div class = "done"></div>
+                        </div>
+                </div>
+        </div>
+        <div class="badge">
+            <h class="nonHidden">Buy list</h>
+            <p class="hidden">made by: </p>
+            <p class="hidden">Nazar Mahdych</p>
+        </div>
+    </body>
+    <script type="text/javascript"src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript"src="main.js"> </script>
+
+</html>
