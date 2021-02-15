@@ -159,6 +159,7 @@ body {
 
 .state-bought .product-name {
  text-decoration: line-through;
+  pointer-events: none;
 }
 .id {
     display: none;
